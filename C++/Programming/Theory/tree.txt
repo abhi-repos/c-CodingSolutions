@@ -1,0 +1,2 @@
+hash table support insert,deletion and search in O(n)time
+The time complexity of above operations in a self-balancing Binary Search Tree (BST) O(log(n))

@@ -1,0 +1,14 @@
+//READ ATLEAST 5 TOPICS DAILY WITH PRACTISE
+
+14Aug-
+
+kruskals
+maximumFlow
+rankCompression
+prims
+dfs bfs
+levelOrderTreeTransversal
+
+15Aug-
+
+timeComplexity

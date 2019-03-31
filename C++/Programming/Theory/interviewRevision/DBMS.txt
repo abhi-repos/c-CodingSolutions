@@ -1,0 +1,45 @@
+Database: Database is a collection of inter-related data which helps in efficient retrieval, insertion and deletion of data from database and organizes the data in the form of tables, views, schemas, reports etc.
+Database Management System: The software which is used to manage database is called Database Management System (DBMS).
+Need to Shift from File System to DBMS
+	Redundancy of data
+	Inconsistency of Data
+	Difficult Data Access
+	Unauthorized Access
+	No Concurrent Access
+	No Backup and Recovery
+DBMS provides us with the many functionalities and is more advantageous than the traditional file system in many ways listed below:
+	Processing Queries and Object Management
+	A DBMS implements ACID(atomicity, durability, isolation,consistency) properties to ensure efficient transaction management without data corruption.
+	Three Tier architecture:The client does not directly communicate with the server. Instead, it interacts with an application server which further communicates with the database system and then the query processing and transaction management takes place. This intermediate layer acts as a medium for exchange of partially processed data between server and client.
+
+
+
+
+SQL stands for Structured Query Language. It is a language used to interact with the database.
+A Database is defined as a structured form of data which is stored in a computer or data in an organised manner and can be accessed in various ways.
+SQL is not a programming language, it is a command  language.
+
+What is the difference between BETWEEN and IN operators in SQL?
+	The BETWEEN operator is used to fetch rows based on a range of values.
+	The IN operator is used to check for values contained in specific sets.
+SELECT * FROM Students WHERE ROLL_NO BETWEEN 20 AND 30;
+SELECT * FROM Students WHERE ROLL_NO IN (20,21,23)
+Write an SQL query to find names of employee start with ‘A’?
+
+The LIKE operator of SQL is used for this purpose. It is used to fetch filtered data by searching for a particular pattern in where clause.
+SELECT * FROM Employees WHERE EmpName like 'A%' ;
+varchar2 is used for character strings of variable length whereas char is used for character strings of fixed length. 
+Data definition language or DDL allows to execute queries like CREATE , ALTER and DELETE. That is, those queries which define the data.
+Data manipulation Language or DML is used to access or manipulate data in the database.
+It allows us to perform below listed functions:
+   Insert data or rows in database
+   Delete data from database
+   Retrieve or fetch data
+   Update data in database.
+What is a join in SQL? What are the types of joins?
+An SQL Join statement is used to combine data or rows from two or more tables based on a common field between them. Different types of Joins are:
+    INNER JOIN: The INNER JOIN keyword selects all rows from both the tables as long as the condition satisfies. This keyword will create the result-set by combining all rows from both the tables where the condition satisfies i.e value of the common field will be same.
+    LEFT JOIN:This join returns all the rows of the table on the left side of the join and matching rows for the table on the right side of join. The rows for which there is no matching row on right side, the result-set will contain null. LEFT JOIN is also known as LEFT OUTER JOIN
+    RIGHT JOIN:RIGHT JOIN is similar to LEFT JOIN. This join returns all the rows of the table on the right side of the join and matching rows for the table on the left side of join. The rows for which there is no matching row on left side, the result-set will contain null. RIGHT JOIN is also known as RIGHT OUTER JOIN.
+    FULL JOIN: FULL JOIN creates the result-set by combining result of both LEFT JOIN and RIGHT JOIN. The result-set will contain all the rows from both the tables. The rows for which there is no matching, the result-set will contain NULL values.
+A database index is a data structure that improves the speed of data retrieval operations on a database table at the cost of additional writes and the use of more storage space to maintain the extra copy of data.

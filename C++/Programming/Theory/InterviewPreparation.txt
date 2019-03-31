@@ -1,0 +1,14 @@
+https://www.quora.com/How-do-I-prepare-to-answer-design-questions-in-a-technical-interview?redirected_qid=1500023
+https://github.com/shashank88/system_design
+http://www.geeksforgeeks.org/load-balancing-on-servers-random-algorithm/
+http://www.geeksforgeeks.org/web-servers-work/
+http://www.geeksforgeeks.org/cache-memory/
+http://www.geeksforgeeks.org/concurrency-control-introduction/
+queue = 2 stack
+http://www.geeksforgeeks.org/wildcard-pattern-matching/
+http://www.geeksforgeeks.org/wildcard-character-matching/
+http://www.geeksforgeeks.org/regular-expressions-in-java/
+https://hackernoon.com/top-10-system-design-interview-questions-for-software-engineers-8561290f0444
+https://github.com/checkcheckzz/system-design-interview
+https://www.quora.com/How-do-I-prepare-to-answer-design-questions-in-a-technical-interview
+When to use NO-SQL Databases and Sharding?

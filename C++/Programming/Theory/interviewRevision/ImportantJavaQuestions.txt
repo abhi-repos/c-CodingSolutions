@@ -1,0 +1,45 @@
+In Java, arrays are objects, they have members like length. The length member is final and cannot be changed. All objects are allocated on heap in Java, so arrays are also allocated on heap.
+
+Java arrays are first class objects and all members of objects are initialized with default values like o, null.
+
+if(arr1==arr2)
+arr1 and arr2 are two references to two different objects. So when we compare arr1 and arr2, two reference variables are compared, therefore we get the output as “Not Same” 
+
+
+Test t;//compiler error
+Test t = new Test();// produce 0  {System.out.println(t.i);}
+class Test {
+  int i;
+} 
+
+Assignment of obj2 to obj1 makes obj2 a reference to obj1. Therefore, any change in obj1 will be reflected in obj2 also.
+
+In Java, the finally is always executed after the try-catch block. This block can be used to do the common cleanup work. There is no such block in C++.
+
+ArithmeticException is an unchecked exception, i.e., not checked by the compiler. So the program compiles fine. See following for more details. Checked vs Unchecked Exceptions in Java
+
+
+
+
+In Java only throwable objects (Throwable objects are instances of any subclass of the Throwable class) can be thrown as exception. So basic data type can no be thrown at all. Following are errors in the above program 
+
+
+
+
+
+throw' keyword is used to explicitly throw an exception. finally block is always executed even when an exception occurs. Call to method C() throws an exception. Thus, control goes in catch block of method B() which again throws an exception. So, control goes in catch block of method A().
+class Test {
+   public static void main(String args[]) {
+     int arr[5];   //Error
+     int arr[] = new int[2]; //Correct
+	/*Correct
+	int arr[][] = new int[4][];
+        arr[0] = new int[1];
+        arr[1] = new int[2];
+        arr[2] = new int[3];
+        arr[3] = new int[4];
+	*/
+   }
+}
+
+

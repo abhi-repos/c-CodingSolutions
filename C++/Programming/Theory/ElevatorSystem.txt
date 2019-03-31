@@ -1,0 +1,7 @@
+The algorithm looks deceivingly simple, yet it is surprisingly very tough to implement, even with a good set of data structures in hand. A good structure to use for this algorithm is three priority queues:
+
+    For the current direction with entries past the current point,
+    For the opposite direction, and
+    for the current direction prior to the current point.
+
+Your implementation would first decide the direction, then pick a queue into which to place the requested pair of {from, to} values.

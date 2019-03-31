@@ -1,0 +1,2 @@
+Access modifiers are used to implement important feature of Object Oriented Programming known as Data Hiding. 
+Access modifiers or Access Specifiers in a class are used to set the accessibility of the class members.

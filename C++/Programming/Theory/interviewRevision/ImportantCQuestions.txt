@@ -1,0 +1,61 @@
+Precedence of '!=' is higher than '='. 
+
+Bitwise operator | can be used to “set” a particular bit while bitwise operator & can be used to “reset” a particular bit.
+
+Associativity of > is left to right. 
+
+The addition(+) operator has higher precedence than shift(<<) operator. 
+
+We can swap two variables without any extra variable using bitwise XOR operator '^'. Let X and Y be two variables to be swapped. Following steps swap X and Y.
+
+  X = X ^ Y;
+  Y = X ^ Y;
+  X = X ^ Y;
+
+Let us consider the expression ++*p in first printf(). Since precedence of prefix ++ and * is same, associativity comes into picture. *p is evaluated first because both prefix ++ and * are right to left associative. When we increment *p by 1, it starts pointing to second character of “knowledge”. Therefore, the first printf statement prints “nowledge”. Let us consider the expression *p++ in second printf() . Since precedence of postfix ++ is higher than *, p++ is evaluated first. And since it’s a psotfix ++, old value of p is used in this expression. Therefore, second printf statement prints “nowledge”. In third printf statement, the new value of p (updated by second printf) is used, and third printf() prints “s”.
+
+ 
+The main statement in question is "x += y += 10". Since there are two += operators in the statement, associativity comes into the picture. Associativity of compound assignment operators is right to left, so the expression is evaluated as x += (y += 10).
+
+The return type of getchar() is int to accommodate EOF which indicates failure:
+
+We can use printf() to find sum of two numbers as printf() returns the number of characters printed. 
+int add(int x, int y)
+	{
+	    return printf("%*c%*c",  x, ' ',  y, ' ');
+	}
+A `%' is written. No argument is converted. The complete conversion specification is`%%'.
+
+Backslash (\\\\) works as escape character for double quote (“).
+
+printf(5 + "GeeksQuiz");
+
+The compiler adds 5 to the base address of the string through the expression 5 + "GeeksQuiz" . Then the string "Quiz" gets passed to the standard library function as an argument.
+
+ 5["GeeksQuiz"]=*(5+["GeeksQuiz"])
+ "GeeksQuiz"[5]=*(["GeeksQuiz"]+5)
+
+gets() can read a string with spaces but a normal scanf() with %s can not. Consider following program as an example. If we enter "Geeks Quiz" as input in below program, the program prints "Geeks" 1 But in the following program, if we enter "Geeks Quiz", it prints "Geeks Quiz" 1
+gets is risky to use as it doesn't do any array bound testing .
+To avoid Buffer Overflow, fgets() should be used instead of gets() as fgets() makes sure that not more than MAX_LIMIT characters are read.
+
+scanf("%4s", str); ==Read maximum 4 characters from console.
+
+.* means The precision is not specified in the format string, but as an additional integer value argument preceding the argument that has to be formatted.
+
+
+In C, scanf returns the no. of inputs it has successfully read. 
+Usage of \b and \r in C are terminal dependend
+
+\b will backspace the cursor, and b will overwrite the charracter at that position.
+\r will move the cursor to the beginning of the current line
+Escape Sequence    Character
+
+
+
+
+The printf function returns the number of characters successfully printed on the screen. The string "GeeksQuiz" has 9 characters, so the first printf prints GeeksQuiz and returns 9.
+
+
+
+
